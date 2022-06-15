@@ -41,3 +41,60 @@ Access Control Lists (ACL)
 • Rules can include: Protocol, Source IP address, Destination IP address, Source port, Destination port 
 • ACL actions are usually permit or deny 
 • Most ACLs have an implicit “deny” at the end. If you configure deny rules, you need to have a “permit all” rule at the end to allow all other traffic
+
+# Creating and seting up a VPC for my app
+
+## Step 1: Create a VPC
+1. On the AWS Dashboard click on `Your VCP`and select `Create VPC`
+
+2. Create a **Name tag** , add `10.0.0.0/16` to the **IPv4 CIDRblock** and click `Create VPC`
+
+
+## Step 2: Create Internet Gateway
+1.  Select `Internet Gateways` and select `Create Internet gateway` 
+
+2. Add a Name tag then click `Create Internet Gateway` 
+
+3. Select `action` and `Attach VPC`. Attach the VPC you created previously.
+
+4. Select `Attach Internet Gateway`
+
+
+## Step 3: Creating a Subnet
+
+1. Click on `Subnet` and select `Create subnet` 
+
+2. Create a public subnet:
+
+- Select the VPC you previously created 
+- Add `10.0.11.0/24` to the **IPv4 CIDRblock** 
+
+## Step 4: Creating a Route Table
+
+1. On the left hand toolbar click on `route table`
+
+2. Create a route table 
+
+3. Select the route table and click `Action` then `Edit routes`
+
+4. Then add a destination and target. The target I used was the internet gateway created earlier. Then click `save routes`
+
+5. Click on subnet associations and then `edit subnet associations`. Select the public subnet and click on save.
+
+## Step 5: Creating security groups
+
+1. Create a security group for the app:
+
+Inbound rules:
+- HTTP: Anywhere
+- SSH: My IP
+
+**Step 6: Create the EC2 instances**
+
+1. Create the app EC2 instance
+
+- AMI: Ubuntu
+- Instance type: t2 micro
+- Instance Details: Your VPC -> Public Subnet -> Assign public ip enabled
+- Security Group: app security group
+
