@@ -6,7 +6,7 @@
 • Data center may be wholly in-house on the company’s premises, or provided by a third party 
 • can configure the network by defining IP address range, creation of subnets, and configuration of route tables and network gateways.
 
-![VPC.jpeg](./VPC.jpeg)
+![VPC.jpg](./VPC.jpg)
 
 ## What is an internet gateway
 A point where all traffic between the VPC and internet passes 
