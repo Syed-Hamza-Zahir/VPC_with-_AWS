@@ -45,6 +45,8 @@ Access Control Lists (ACL)
 # Creating and seting up a VPC for my app
 ![vpc.png](.vpc.png)
 
+![diagram.jpg](.diagram.jpg)
+
 ## Step 1: Create a VPC
 1. On the AWS Dashboard click on `Your VCP`and select `Create VPC`
 
