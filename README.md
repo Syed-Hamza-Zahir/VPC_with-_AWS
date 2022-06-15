@@ -43,9 +43,9 @@ Access Control Lists (ACL)
 • Most ACLs have an implicit “deny” at the end. If you configure deny rules, you need to have a “permit all” rule at the end to allow all other traffic
 
 # Creating and seting up a VPC for my app
-![vpc.png](.vpc.png)
+![vpc.png](/vpc.png)
 
-![diagram.jpg](.diagram.jpg)
+![diagram.jpg](/diagram.jpg)
 
 ## Step 1: Create a VPC
 1. On the AWS Dashboard click on `Your VCP`and select `Create VPC`
