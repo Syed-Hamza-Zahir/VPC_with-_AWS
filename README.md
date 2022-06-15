@@ -2,11 +2,14 @@
 
 
 ## Virtual Private Cloud 
+
 • A private cloud is a cloud computing model that involves a secure cloud based environment where only the specified organization can access its resources.
+
 • Data center may be wholly in-house on the company’s premises, or provided by a third party 
+
 • can configure the network by defining IP address range, creation of subnets, and configuration of route tables and network gateways.
 
-![VPC.jpg](./VPC.jpg)
+![VPC.jpg](/VPC.jpg)
 
 ## What is an internet gateway
 A point where all traffic between the VPC and internet passes 
