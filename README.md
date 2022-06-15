@@ -26,11 +26,10 @@ Can be used to limit IP's used
 - Security – separate devices into their own segments (e.g. Servers, together)
 - Traffic management – limit the impact of broadcasting to a smaller group
 
-## What are cidr block – how to create one
-CIDR blocks are groups of addresses that share the same prefix and contain the same number of bits
+## What are CIDR block – how to create one
+CIDR (Classless Inter-Domain Routing) blocks are groups of addresses that share the same prefix and contain the same number of bits
 
 ## What is an NACLs - use case of NACL
-Network Access Control List (ACL)
 Network Access Control (NAC) is a computer networking solution that uses a set of protocols to define and implement a policy that describes how to secure access to network nodes by devices when they initially attempt to access the network.
 
 limiting user access
