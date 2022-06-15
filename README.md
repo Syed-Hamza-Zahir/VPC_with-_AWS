@@ -6,8 +6,10 @@
 • Data center may be wholly in-house on the company’s premises, or provided by a third party 
 • can configure the network by defining IP address range, creation of subnets, and configuration of route tables and network gateways.
 
-## What is an internet gateway
+![VPC.jpeg](./VPC.jpeg)
 
+## What is an internet gateway
+A point where all traffic between the VPC and internet passes 
 
 ## What is a Subnet
 A subnet, or subnetwork, is a segmented piece of a larger network. One goal of a subnet is to split a large network into a grouping of smaller, interconnected networks to help minimize traffic.
